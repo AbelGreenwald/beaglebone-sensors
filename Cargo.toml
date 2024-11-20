@@ -1,0 +1,33 @@
+[package]
+name = "revenir-sensors"
+version = "0.0.1"
+edition = "2021"
+autobins = false
+autoexamples = false
+autotests = false
+autobenches = false
+
+[dependencies]
+linux-embedded-hal = "0.4.0"
+embedded-hal = "1.0.0"
+embedded-hal-bus = "0.2.0"
+env_logger = "0.11.5"
+telegraf = "0.6.0"
+ens160-aq = "0.2"
+bme280 = "0.5.1"
+
+[dependencies.log]
+version = "0.4"
+
+[dependencies.shared-bus]
+version = "0.3.1"
+features = ["std"]
+
+
+[[bin]]
+name = "revenir-sensors"
+test = false
+bench = false
+
+
+
